@@ -71,7 +71,7 @@
                             <a class="nav-link" href="encrypt.html">Encrypt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="decrypt.html">Decrypt</a>
+                            <a class="nav-link active" href="decrypt.html">Decrypt</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -88,11 +88,18 @@
         <div class="container mt-5">
 
             <form class="card shadow">
-                <div class="card-header fw-bold">Generator</div>
+                <div class="card-header fw-bold">Generator-Decryptor
+                    <p class="text-muted small">Upload <code>.txt</code> file or paste in field</p>
+                </div>
                 <div class="card-body">
                     <div class="mb-3">
+                        <!-- <button class="btn btn-warning" onclick="loadFileAsText()">Upload File</button> -->
+                        <input class="btn btn-sm btn-secondary" type="file" id="fileToLoad"> &nbsp;
+                        <a class="btn btn-warning" onclick="loadFileAsText()">Read Cipher</a>
+                    </div>
+                    <div class="mb-3">
                         <label for="plaintext" class="form-label">Cipher Text<span class="text-danger">*</span></label>
-                        <textarea type="text" class="form-control" rows="1" id="ciphertext"></textarea>
+                        <textarea type="text" class="form-control" rows="1" id="ciphertext" readonly></textarea>
                         <div id="passphraseHelp" class="form-text">Paste your cipher text here</div>
                     </div>
                     <div class="row">
@@ -105,8 +112,7 @@
                                 views</div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="passphrase" class="form-label">Key ID<span
-                                    class="text-danger">*</span></label>
+                            <label for="passphrase" class="form-label">Key ID<span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="keyid">
                         </div>
                     </div>
