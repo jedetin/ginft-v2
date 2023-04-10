@@ -65,10 +65,10 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="encrypt.html">Encrypt</a>
+                            <a class="nav-link active" href="encrypt.html">Encrypt</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="decrypt.html">Decrypt</a>
@@ -88,7 +88,7 @@
         <div class="container mt-5">
 
             <form class="card shadow">
-                <div class="card-header fw-bold">Generator</div>
+                <div class="card-header fw-bold">Generator-Encryptor</div>
                 <div class="card-body">
                     <div class="mb-3">
                         <label for="plaintext" class="form-label">Content Text<span class="text-danger">*</span></label>
@@ -141,6 +141,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary" onclick="jcopy()">Copy</button>
+                            <button type="button" class="btn btn-success" onclick="saveFile()">Download</button>
                         </div>
                     </div>
                 </div>
